@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('Images/top-banner-img.png');
+    background-size: cover;
+    background-position: center;
+    color: blue;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 3px solid rgb(99, 82, 82); /* Add a distinct bottom border for separation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Keeps the banner visually distinct */
+}
+
+.banner a {
+    color: #FFD700; /* Highlight the "Read more" link in gold for visibility */
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.banner a:hover {
+    text-decoration: underline; /* Underline on hover for interaction feedback */
+}
+
+
+/* Header Section */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav img {
+    height: 40px;
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.right-nav ul li {
+    font-size: 16px;
+    cursor: pointer;
+    color: #555;
+}
+
+.right-nav ul li:hover {
+    color: #000;
+}
+
+/* First Section */
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.left-part h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.left-part p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.left-part button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-part button:hover {
+    background-color: #0056b3;
+}
+
+.right-part img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Second Section */
+.second {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+}
+
+.second p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.images img:hover {
+    filter: grayscale(0%);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+}
